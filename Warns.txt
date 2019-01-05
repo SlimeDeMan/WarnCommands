@@ -1,0 +1,177 @@
+{
+  "name": "Warns",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "JlJeq",
+  "actions": [
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "Warn",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "comparison": "1",
+      "value": "0",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "6",
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser} has no warnings.",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "---ONE---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "10",
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser}'s warns.\n1. ${serverVars(\"Reason1\")}",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "---TWO---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "comparison": "1",
+      "value": "2",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "14",
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser}'s warns.\n1. ${serverVars(\"Reason1\")}\n2. ${serverVars(\"Reason2\")}",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "---THREE---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "comparison": "1",
+      "value": "3",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "18",
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser}'s warns.\n1. ${serverVars(\"Reason1\")}\n2. ${serverVars(\"Reason2\")}\n3. ${serverVars(\"Reason3\")}",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "---FOUR---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "comparison": "1",
+      "value": "4",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "22",
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser}'s warns.\n1. ${serverVars(\"Reason1\")}\n2. ${serverVars(\"Reason2\")}\n3. ${serverVars(\"Reason3\")}\n4. ${serverVars(\"Reason4\")}",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "---FIVE---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "comparison": "1",
+      "value": "5",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "0",
+      "iffalseVal": "26",
+      "name": "Check Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser}'s warns.\n1. ${serverVars(\"Reason1\")}\n2. ${serverVars(\"Reason2\")}\n3. ${serverVars(\"Reason3\")}\n4. ${serverVars(\"Reason4\")}\n5. ${serverVars(\"Reason5\")}",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ]
+}

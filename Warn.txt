@@ -1,0 +1,319 @@
+{
+  "name": "Warn",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "ZsAIj",
+  "actions": [
+    {
+      "comment": "---CHECK---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "info": "1",
+      "find": "Server Staff",
+      "storage": "1",
+      "varName": "Role",
+      "name": "Find Role"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "role": "3",
+      "varName2": "Role",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "37",
+      "name": "Check If Member has Role"
+    },
+    {
+      "condition": "0",
+      "comparison": "2",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "39",
+      "name": "Check Parameters"
+    },
+    {
+      "comment": "---STORE---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "Warn",
+      "name": "Store Member Data"
+    },
+    {
+      "comment": "---ONE---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "comparison": "1",
+      "value": "0",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "14",
+      "name": "Check Member Data"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "2",
+      "varName": "Reason1",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser} is on warning 1/5!\n**REASON: ${serverVars(\"Reason1\")}**",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "---TWO---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "2",
+      "varName": "Reason2",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "20",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "changeType": "0",
+      "value": "2",
+      "name": "Control Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser} is on warning 2/5!\n**REASON: ${serverVars(\"Reason2\")}**",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "---THREE---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "2",
+      "varName": "Reason3",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "comparison": "1",
+      "value": "2",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "26",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "changeType": "0",
+      "value": "3",
+      "name": "Control Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser} is on warning 3/5!\n**REASON: ${serverVars(\"Reason3\")}**",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "---FOUR---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "2",
+      "varName": "Reason4",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "comparison": "1",
+      "value": "3",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "26",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "changeType": "0",
+      "value": "4",
+      "name": "Control Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser} is on warning 4/5!\n**REASON: ${serverVars(\"Reason4\")}**",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "comment": "---FIVE---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "2",
+      "varName": "Reason5",
+      "name": "Store Command Params"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser} is on warning 5/5!\n**REASON: ${serverVars(\"Reason5\")}**",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "info": "1",
+      "find": "ban-reports",
+      "storage": "1",
+      "varName": "Channel",
+      "name": "Find Channel"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "@Server Staff, A user known as ${mentionedUser} has reached 5/5 warnings!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "---ERROR---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You require the `Server Staff` role to use this command!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Correct usage: `!Warn USER REASON`",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "---SAVE---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "storage": "2",
+      "varName": "Reason1",
+      "name": "Save Variable"
+    },
+    {
+      "storage": "2",
+      "varName": "Reason2",
+      "name": "Save Variable"
+    },
+    {
+      "storage": "2",
+      "varName": "Reason3",
+      "name": "Save Variable"
+    },
+    {
+      "storage": "2",
+      "varName": "Reason4",
+      "name": "Save Variable"
+    },
+    {
+      "storage": "2",
+      "varName": "Reason5",
+      "name": "Save Variable"
+    }
+  ]
+}

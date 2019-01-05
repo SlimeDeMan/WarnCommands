@@ -1,0 +1,68 @@
+{
+  "name": "ClrWarns",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "KGkhE",
+  "actions": [
+    {
+      "comment": "---CHECK---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "info": "1",
+      "find": "Server Staff",
+      "storage": "1",
+      "varName": "Role",
+      "name": "Find Role"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "role": "3",
+      "varName2": "Role",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "9",
+      "name": "Check If Member has Role"
+    },
+    {
+      "comment": "---CLEAR---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "Warn",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${mentionedUser}'s warnings have been reset!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "---ERROR---",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You require the `Server Staff` role to use this command!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ]
+}
